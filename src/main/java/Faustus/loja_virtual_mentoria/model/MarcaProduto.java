@@ -13,7 +13,7 @@ public class MarcaProduto implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_marca_produto")
     private Long id;
-    @Column(name = "nomeDesc")
+    @Column(name = "nomeDesc", nullable = false)
     private String nomeDesc;
 
     public Long getId() {
